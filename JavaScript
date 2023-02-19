@@ -1,0 +1,43 @@
+let getUser = prompt("Adiniz nedir");
+let spanUser = document.querySelector("#promptUser");
+
+spanUser.append(getUser);
+
+function clock(){
+    let day = new Date().getDay();
+    let timeAndDayDom = document.querySelector("#timeAndDay");
+
+    switch (day) {
+        case 0:
+            day = "Pazar"
+            break;
+        case 1:
+            day = "Pazartesi"
+            break;
+        case 2:
+            day = "Sali"
+            break;
+        case 3: 
+            day = "Carsamba"
+            break;
+        case 4:
+            day = "Persembe"
+            break;
+        case 5:
+            day = "Cuma"
+            break;
+        case 6: 
+            day = "Cumartesi"  
+            break;                  
+        default:
+            break;
+    };
+    
+    let hour =  new Date().getHours();
+    let minute = new Date().getMinutes();
+    let second = new Date().getSeconds();
+    
+    timeAndDayDom.innerHTML = `${hour}:${minute}:${second} ${day}`;
+}
+
+setInterval(clock);
