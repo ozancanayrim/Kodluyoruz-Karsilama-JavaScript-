@@ -1,0 +1,19 @@
+<style>
+      body {
+        background-color: rgba(0, 0, 0, 0.581);
+        text-align: center;
+        color: orange;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 5px;
+      }
+
+      .flex{
+        display: inline-flex;
+        text-align: center;
+      }
+
+      #promptUser{
+        color: darkred;
+        font-size: 45px;
+      }
+    </style>
